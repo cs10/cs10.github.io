@@ -1,0 +1,235 @@
+/* Fixes for deprecated tags. */
+.strong { font-weight: bold; }
+.em { font-style: italic; }
+
+a,
+a:visited {
+    color: #2192d4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2192d4;
+    text-decoration: underline;
+}
+
+img {
+    -webkit-box-reflect: below 2px -webkit-linear-gradient(top,
+            transparent, transparent .8, rgba(255,255,255,0.20));
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+         -o-border-radius: 6px;
+            border-radius: 6px;
+    padding: 4px 4px 2px 4px;
+    margin: 1em 1em .1em 1em;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: 4px;
+        -ms-box-shadow: 4px;
+         -o-box-shadow: 4px;
+}
+
+body {
+    background: whitesmoke;
+    font-family: 'Helvetica Neue', 'Helvetica','Cantarell', arial, sans-serif;
+    line-height: 125%;
+    width: 100%;
+    float: center;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, h5, h6 {
+    font-family: 'Cardo', 'Times', serif;
+    font-weight: 300;
+    color: #666;
+}
+h1 {
+    font-size: 1.7em;
+    margin-bottom: .2em;
+}
+h2 {
+    padding-bottom: .2em;
+    margin-bottom: .2em;
+}
+h3 {
+    font-size: 32px; /* FIXME */
+    margin-bottom: .8em;
+}
+
+h2 { /* Post Titles */
+    font-size: 24px; /* FIXME */
+    font-weight: 300;
+    margin-bottom: .4em;
+    text-indent: .6em;
+    margin-top: .2em;
+    font-family: 'Helvetica  Neue Light', 'Helvetica  Neue', 'Helvetica','Cantarell', arial, sans-serif;
+}
+
+p { text-indent: 1.4em; }
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white; /* Necessary when above other content */
+    margin: auto;
+    padding: .5em;
+    text-align: center;
+    font-size: 120%;
+    box-shadow: 0 3px 6px rgba(182, 182, 182, 0.75);
+    z-index: 1000;
+}
+
+.nav table {
+    width: auto;
+    text-align: center;
+    padding: .1em;
+    float: center;
+    margin: auto;
+}
+
+.nav tr td a,
+.nav tr td a:visited {
+    text-align: center;
+    color: #666;
+    margin: 0 .5em;
+}
+
+.nav tr td a:hover {
+    color: #2192d4;
+    text-decoration: underline;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    top: 2.5em;
+    text-align: center;
+    padding: 0;
+    left: 0;
+    margin-bottom: 1em;
+}
+
+.header img {
+    -webkit-box-reflect: none;
+    width: 100%;
+    box-shadow: 0;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+.middle {
+    margin: 2% 0 2em 0;
+    top: 2em;
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    margin: .5em 2% 2em 4%;
+    width: 68%;
+    position: relative;
+    float: left;
+    overflow: none;
+}
+.side {
+    margin: .5em 4% 0 0;
+    width: 20%;
+    position: relative;
+    float: right;
+    text-align: center;
+}
+
+#ifr {
+  width: 100%;
+  border: 0;
+  height: 4500px;
+}
+
+.footer {
+    text-align: center;
+    position: static;
+    margin: 1em 0;
+    padding-top: 4px;
+    width: 100%; /* inherit main, and float left*/
+    font-size: 75%;
+    border-top: 1px dashed #ccc;
+    float: left;
+}
+
+.article {
+    text-align: left;
+    margin: 0 1em  1.4em 0;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.article h1 {
+    font-family: 'Cardo', serif;
+    margin-bottom: 0px;
+}
+
+.article, h2 { /* dashed borders, for posts and link headers */
+    border-bottom: 1.5px dashed #CCC;
+    border-width: 100%;
+}
+
+.photo img {
+    -webkit-box-reflect: below 4px -webkit-gradient(
+        linear, left top, left bottom, from(transparent),
+        color-stop(.8, transparent), to(rgba(255,255,255,0.20)));
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 6px;
+    border: 8px ridge gray;
+    box-shadow: 8px 8px 5px #777;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: 8px 8px 5px #777;
+    -ms-box-shadow: 8px 8px 5px #777;
+    -o-box-shadow: 8px 8px 5px #777;
+    margin: 0 auto 1em;
+    max-width: 100%;
+    max-height: 640px;
+}
+
+.left {
+    text-align: left;
+    list-style: none;
+}
+
+.left li {
+    list-style: none;
+}
+
+td .left:before {
+    content:"• ";
+    font-weight: bold;
+    font-size: 170%;
+    line-height: 50%;
+    vertical-align: -.15em;
+}
+.center { text-align: center; }
+
+.right {
+    text-align: right;
+    list-style: none;
+}
+
+.right li {
+    text-align: right;
+    list-style: none;
+}
+td .right:after {
+    content: " •";
+    font-weight: bold;
+    font-size: 170%;
+    line-height: 50%;
+    vertical-align: -.15em;
+}

@@ -1,0 +1,124 @@
+---
+layout: default
+title: Our Tools
+low:
+    - name: Canon XA10
+      amzn:
+      bpho: 749467-REG
+      desc:
+    - name:
+      amzn:
+      bpho:
+      desc:
+high:
+    - name: Canon 5D Mark III
+      amzn: http://amazon.com/B007FGYZFI
+      bpho: woooot
+      desc: Yay!
+    - name: Canon EOS C300
+      amzn:
+      bpho: 839220-REG
+      desc: Super Fancy.
+mas:
+    - name: PixelConduit
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/pixelconduit/id593999619?mt=12
+      desc:
+    - name: DaVinci Resolve Lite
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/davinci-resolve-lite/id571213070?mt=12
+      desc:
+    - name: Final Cut Pro X
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/final-cut-pro/id424389933?mt=12
+      desc: Final Cut is Awesome!
+    - name: Motion 5
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/motion/id434290957?mt=12
+      desc:
+    - name: Garageband
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/garageband/id682658836?mt=12
+      desc:
+    - name: Logic Pro X
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/logic-pro-x/id634148309?mt=12
+      desc:
+    - name: Compressor 4
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/compressor/id424390742?mt=12
+      desc:
+    - name: iMovie
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/imovie/id408981434?mt=12
+      desc:
+    - name: OS X Mavericks
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/os-x-mavericks/id675248567?mt=12
+      desc:
+    - name: Keynote
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/keynote/id409183694?mt=12
+      desc:
+    - name: Aperture 3
+      link: http://apple.com/finalcut
+      apps: https://itunes.apple.com/us/app/aperture/id408981426?mt=12
+      desc:
+---
+<!-- TODO: Add price info on page? -->
+
+<h1>This page is very much under construction...</h1>
+
+<h1>Tools</h1>
+
+Here's links on Amazon (and elsewhere) to a bunch of tools that we use, separated
+by budget along with some useful extra items.
+
+<hr />
+<h2>Low Budget Setup</h2>
+<ul>
+    {% for i in page.low %}
+    <li>
+        {{ i.name }}
+        (<a href="{{ i.amzn }}&{{ site.amzn }}">Amazon</a>)
+        (<a type="bhphoto" data-sku="{{ i.bpho }}">B&amp;H Photo</a>)
+        <br />{{ i.desc }}
+    </li>
+    {% endfor %}
+</ul>
+<br />
+<br />
+
+
+<hr />
+<h2>Large Budget Setup</h2>
+<ul>
+    {% for i in page.high %}
+    <li>
+        {{ i.name }} (<a href="{{ i.amzn }}&{{ site.amzn }}">Amazon</a>)  (<a type="bhphoto" data-sku="{{ i.bpho }}">B&amp;H Photo</a>)
+        <br />
+        {{ i.desc }}
+    </li>
+    {% endfor %}
+</ul>
+<br />
+<br />
+<hr />
+<h2>Software</h2>
+<!-- itunes links: https://linkmaker.itunes.apple.com/us/?at=1l3v8Vb -->
+<ul>
+    {% for i in page.mas %}
+    <li>
+        <a href="{{ i.link }}">{{ i.name }}</a> (<a href="{{ i.apps }}&{{ site.aapl }}">App Store</a>)
+        <br />{{ i.desc }}
+    </li>
+    {% endfor %}
+</ul>
+
+<br />
+<br />
+<hr />
+<h2>Other Cool Tools</h2>
+<br />
+<br />
+<hr />

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- Google Search Info link -->
+    <link href="https://plus.google.com/109987956810230671866" rel="author" />
+    <!--Google Webmaster tools-->
+    <meta name="google-site-verification"
+        content="pHeE_FvvBiPQp5IjXqxUehEwgEP037d2fBj5C3G-QSk" />
+
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ site.description }}" />
+
+    {% if page.title %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="title" content="{{ page.title }} | {{ site.title }}">
+    {% else %}
+    <title>{{ site.title }}</title>
+    <meta name="title" content="{{ site.title }}">
+    {% endif %}
+
+
+    {% if page.tags %}
+    <meta name="keywords"
+    content="{% for tag in page.tags %} {{ tag }}, {% endfor %}
+        {% for key in site.keywords %} {{ key }}, {% endfor %}" />
+    {% else %}
+    <meta name="keywords"
+        content="{% for key in site.keywords %} {{ key }}, {% endfor %}" />
+    {% endif %}
+
+    <!--CSS script for cantarell font-->
+    <link href='http://fonts.googleapis.com/css?family=Cardo|Cantarell' rel='stylesheet' type='text/css'>
+    <!--Normalize CSS, before loading; Use CloudFlare CDN -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css" rel='stylesheet' type='text/css'>
+    <!--Main CSS-->
+    <link href="{{ site.url }}/site/main.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <div class="nav">
+    <table border="0">
+      <tr>
+        <td><a href="{{ site.url }}">Home</a></td>
+        <td><a href="{{ site.url }}/demo">L@S Demo Info</a></td>
+        <td><a href="{{ site.url }}/poster">L@S Poster</a></td>
+        <td><a href="{{ site.url }}/process">CS10 Capture Guide</a></td>
+        <td><a href="{{ site.url }}/tools">Tools</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="middle">
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>
+      &copy; {{ site.copy}} UC Berkeley
+      | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0"
+        src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
+        </a> <br />Best Practices for MOOC Video is licensed under a <a
+        rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </p>
+  </div>
+  <!-- Amazon Affiliates -->
+  <script charset="utf-8" type="text/javascript"
+  src="http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fmicbalpho-20%2F8005%2Fab6c03fb-e836-47d1-afc3-649fe3c57048">
+  </script>
+  <!-- B&H Photo -->
+  <script src="http://mer54715.datafeedfile.com/widget/quicklinker/autoload.dffbah_quicklinker-1.0.php?kbid=10801&binum=100101010111000&sid="></script>
+  <!-- iTunes / Apple -->
+  <script type='text/javascript'>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '1l3v8Vb']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47210910-2', 'cs10.github.io');
+  ga('send', 'pageview');
+
+  </script>
+
+</body>
+</html>
