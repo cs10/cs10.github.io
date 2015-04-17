@@ -1,0 +1,225 @@
+---
+---
+
+h1, h2, .vagrounded-light, .logo {
+  font-family: 'VAG Rounded Light', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h2 { /* Used for Staff Headings */
+    font-size: 1.5em;
+    color: #0F4D92;
+    margin: .4em;
+}
+
+.wp-caption {
+    border: 1px solid #DDD;
+    text-align: center;
+    align:right;
+    background-color: #F3F3F3;
+    padding-top: 4px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+}
+
+.wp-caption-text {
+  font-size: 0.8em;
+  line-height: 13px;
+  align:right;
+  padding: 2px 4px 5px;
+  margin: 0;
+  color: #666;
+}
+
+.page-section {
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* For resources List */
+.lambda {
+  list-style-type: none;
+}
+
+.lambda > li:before {
+  content: "\03BB"; /* Lambda Char Unicode */
+  padding: .5em;
+  font-weight: bold;
+}
+/*****************************************************************************/
+
+th, td {
+  margin: auto;
+  vertical-align: middle;
+  border: none;
+  text-align: center;
+}
+th {
+  background-color: #C0C0C0;
+}
+
+.grading > tbody > tr:nth-child(even),
+tr.cal:nth-child(even), .dark {
+    background-color: #E0E0E0;
+}
+.grading > tbody > tr:nth-child(odd),
+tr.cal:nth-child(odd), .light {
+    background-color: #F0F0F0;
+}
+
+.grading {
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    align: center;
+    text-align: center;
+}
+
+/*****************************************************************************/
+/** CALENDAR CLASSES **/
+/*****************************************************************************/
+/* All Cells */
+
+.table>tbody>tr>td, /* This overrides bootstrap stupidity */
+.table>tbody>tr>th {
+  vertical-align: middle;
+}
+.cal > td,
+.cal > th {
+    vertical-align: middle;
+    border: 2px solid white;
+    padding: 2px;
+    margin: 2px;
+}
+
+/* This is the date column */
+/*.cal > td:nth-child(2) {
+    font-family: monospace;
+}*/
+
+/* READING ASSIGNMENTS CLASSES */
+/* Preface all readings links with this. */
+.reading:before {
+    content: "\03BB   "; /* Lambda Char Unicode */
+    color: black;
+    display: inline;
+    text-decoration: none;
+}
+
+/* The standard color for readings */
+/* Reading Assignments Key Box */
+.key {
+    margin: 1% 0 2% 0;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: .2em;
+}
+.required, .required:visited {
+    color: #00E;
+}
+/* Readings that are very technical */
+.hard, .hard:visited {
+    color: #008000;
+}
+/* Recommended Readings */
+.optional, .optional:visited {
+    color: #800;
+    font-style: italic;
+}
+
+/* SPECIAL DATES BACKGROUND COLOLRS */
+.due {
+    background-color: #FFC;
+}
+.paper {
+    background-color: #CFC;
+}
+.project {
+    background-color: #FCC;
+}
+.exam {
+    background-color: #CCF;
+    font-weight: bold;
+}
+.noClass {
+    background-color: #333;
+    color: #FFF;
+}
+
+div.inner {
+    vertical-align: middle;
+    margin: -2px; /* Opposite of the inner cell padding */
+    padding: 2px;
+}
+
+/******************************************************************************/
+/** STAFF PHOTOS **/
+/******************************************************************************/
+img.staff {
+    border: 4px solid LightBlue;
+    border-radius: 4px;
+    margin: 2px;
+    max-width: 208px; /* these values include padding + border!*/
+    max-height: 308px;
+    width: 100%;
+    height: 100%;
+}
+
+div.staffimgrow {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.staffimgrow > div {
+  text-align: center;
+  margin: 0 auto;
+  padding: .5em .3em;
+  word-wrap: break-word;
+}
+
+/* .snap inserts the logo using the proper formatting.
+ * Insert using "<span class="snap">snap</span>"
+ */
+.snap:first-letter {
+  font-variant: normal;
+}
+
+.snap {
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-style: normal;
+}
+
+.snap:after {
+  content: "!";
+  font-style: italic;
+}
+/* END .snap */
+
+@media screen (max-width: 1000px) {
+  div.lambda:before {
+    content: "\03BB"; /* Lambda Char Unicode */
+    padding: .5em;
+  }
+}
+
+body {
+  background-image: url({{ site.baseurl }}/resources/images/gobo_watermark.gif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed;
+}
+
+{% include header.css %}
+
+/**********************************
+ * LOAD FONTS LAST
+ *********************************/
+@font-face {
+  font-family: 'VAG Rounded Light';
+  src: url('fonts/vagrounded/VAGRoundedStd-Light-1.eot?#iefix') format('embedded-opentype'),
+       url('fonts/vagrounded/VAGRoundedStd-Light-1.woff') format('woff')
+}
+
+/* TODO: Base64 encode these, then add Open-Sans then restric to retina displays*/

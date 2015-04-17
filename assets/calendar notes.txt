@@ -1,0 +1,41 @@
+CS10 Calendar API Docs and Notes
+
+API Format:
+// this is an idea for making the site easier to update, maybe..
+// This is major WIP and the API / format for this has yet to be finalized
+/* DATA MODELS -- OPTIONAL DATA NOTED */
+lecture = {
+        title: '',
+        url: 'url',
+        video: 'url',
+        classes: 'optional classes to apply'
+};
+
+reading = {
+    title: 'Name',
+    url: 'duh',
+    classes: 'required hard' // or whatever
+};
+
+lab = {
+    title: '',
+    url: '',
+    RQ: 1, // OPTIONAL -- INT,
+    video: '' // OPTIONAL -- LINK
+};
+
+discussion = {
+    title: '',
+    url: '' // OPTIONAL -- default is none.
+};
+
+
+This is a bunch of items that make a week.
+The mapping is:
+key: []
+key: string
+key: {}
+
+week = {
+
+}
