@@ -32,7 +32,7 @@ title: Directory Listing
                       '_layouts', '_includes', 'README.md', '_config.yml'];
 
     var GH_ORG    = 'cs10', // or username
-        REPO      = 'sp15',
+        REPO      = location.pathname.split('/')[1], // sp15
         baseRepo  = '',
         isSubmodule = false;
 
@@ -51,7 +51,7 @@ title: Directory Listing
 
     function headerPath() {
       var path = location.pathname.split('/');
-      document.title = 'CS10 Files in: ' + decodeURIComponent(path[path.length - 2]);
+      document.title = 'CS10 Files in: ' + decodeURIComponent(location.pathname);
       $('h1.title').html(document.title)
       var parentDir = '/' + REPO;
       if (isSubmodule) {
