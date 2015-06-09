@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BJC Dashboard</title>
+    <meta http-equiv="charset" content="utf-8">
+
+    <link href="../assets/css/bootstrap33.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/cs10style.css" type="text/css" rel="stylesheet">
+    <link href="clock/flipclock.css" type="text/css" rel="stylesheet">
+
+    <script src="../assets/lib/jquery.min.js"></script>
+    <script src="clock/flipclock.min.js"></script>
+    <style type="text/css">
+    .clock {
+      width: 700px;
+      margin: 2em auto;
+    }
+    .clock-close {
+      width: 625px;
+    }
+    .mooc2, .mooc3, .mooc4 {
+
+    }
+    .flip-clock-wrapper {
+      margin: 0;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="header center coontainer-fluid">
+        <div class="row row-centered" style="width:100%">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <br><br>
+                <h2 class="logo">The Beauty &amp; Joy of Computing</h2>
+                <h2 class="logo">MOOC Countdown Page</h2>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+      </div>
+    <h1>BJC.1x</h1>
+    <div class="clock clock-close">
+      <div class="mooc1"></div>
+    </div>
+    <br />
+    <h1>BJC.2x</h1>
+    <div class="clock">
+      <div class="mooc2"></div>
+    </div>
+    <br />
+    <h1>BJC.3x</h1>
+    <div class="clock">
+      <div class="mooc3"></div>
+    </div>
+    <br />
+    <h1>BJC.4x</h1>
+    <div class="clock">
+      <div class="mooc4"></div>
+    </div>
+    <div class="message"></div>
+
+    <script type="text/javascript">
+      var clock;
+
+      $(document).ready(function() {
+        var clock1, clock2, clock3, clock4,
+            now = (new Date()).getTime(),
+            time1, time2, time3, time4;
+
+        // Sept 8, 2015
+        time1 = ((new Date(2015, 8, 7)).getTime() - now) / 1e3;
+        // Oct 26, 2015
+        time2 = ((new Date(2015, 9, 26)).getTime() - now) / 1e3;
+        // Jan 4, 2016
+        time3 = ((new Date(2016, 0, 4)).getTime() - now) / 1e3;
+        // Mar 7, 2016
+        time4 = ((new Date(2016, 2, 7)).getTime() - now) / 1e3;
+
+        var params = {
+          clockFace: 'DailyCounter',
+          countdown: true,
+          callbacks: {
+            stop: function() {
+              $('.message').html('The clock has stopped!')
+            }
+          }
+        };
+
+        clock1 = $('.mooc1').FlipClock(time1, params);
+        clock2 = $('.mooc2').FlipClock(time2, params);
+        clock3 = $('.mooc3').FlipClock(time3, params);
+        clock4 = $('.mooc4').FlipClock(time4, params);
+
+      });
+    </script>
+  </body>
+</html>
