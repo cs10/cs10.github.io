@@ -11,19 +11,26 @@
     <script src="../assets/lib/jquery.min.js"></script>
     <script src="clock/flipclock.min.js"></script>
     <style type="text/css">
-    .clock {
-      width: 700px;
-      margin: 2em auto;
-    }
-    .clock-close {
-      width: 625px;
-    }
-    .mooc2, .mooc3, .mooc4 {
+      .clock {
+        width: 700px;
+        margin: 2em auto;
+      }
+      .clock-close {
+        width: 625px;
+      }
 
-    }
-    .flip-clock-wrapper {
-      margin: 0;
-    }
+      .mooc1, .mooc2, .mooc3, .mooc4 {
+
+      }
+      .time {
+
+      }
+      .enrollment {
+
+      }
+      .flip-clock-wrapper {
+        margin: 0;
+      }
 
     </style>
   </head>
@@ -34,7 +41,7 @@
             <div class="col-md-6">
                 <br><br>
                 <h2 class="logo">The Beauty &amp; Joy of Computing</h2>
-                <h2 class="logo">MOOC Countdown Page</h2>
+                <h2 class="logo">MOOC Status Page</h2>
             </div>
             <div class="col-md-3">
             </div>
@@ -42,22 +49,34 @@
       </div>
     <h1 class="center">BJC.1x</h1>
     <div class="clock clock-close">
-      <div class="mooc1"></div>
+      <h3>Countdown</h3>
+      <div class="mooc1 time"></div>
+      <h3>Enrollment Counter</h3>
+      <div class="mooc1 enrollment"></div>
     </div>
     <br />
     <h1 class="center">BJC.2x</h1>
     <div class="clock">
-      <div class="mooc2"></div>
+      <h3>Countdown</h3>
+      <div class="mooc2 time"></div>
+      <h3>Enrollment Counter</h3>
+      <div class="mooc2 enrollment"></div>
     </div>
     <br />
     <h1 class="center">BJC.3x</h1>
     <div class="clock">
-      <div class="mooc3"></div>
+      <h3>Countdown</h3>
+      <div class="mooc3 time"></div>
+      <h3>Enrollment Counter</h3>
+      <div class="mooc3 enrollment"></div>
     </div>
     <br />
     <h1 class="center">BJC.4x</h1>
     <div class="clock">
-      <div class="mooc4"></div>
+      <h3>Countdown</h3>
+      <div class="mooc4 time"></div>
+      <h3>Enrollment Counter</h3>
+      <div class="mooc4 enrollment"></div>
     </div>
     <div class="message"></div>
 
@@ -88,11 +107,46 @@
           }
         };
 
-        clock1 = $('.mooc1').FlipClock(time1, params);
-        clock2 = $('.mooc2').FlipClock(time2, params);
-        clock3 = $('.mooc3').FlipClock(time3, params);
-        clock4 = $('.mooc4').FlipClock(time4, params);
+        clock1 = $('.mooc1.time').FlipClock(time1, params);
+        clock2 = $('.mooc2.time').FlipClock(time2, params);
+        clock3 = $('.mooc3.time').FlipClock(time3, params);
+        clock4 = $('.mooc4.time').FlipClock(time4, params);
 
+        var enrollParams = {
+          clockFace: 'Counter',
+          countdown: false,
+          callbacks: {
+            stop: function() {
+              $('.message').html('The clock has stopped!')
+            }
+          }
+        };
+
+        var API_URL = 'https://bjcx-api.herokuapp.com';
+        var courseIDs = [
+            'BerkeleyX/BJC.1x/3T2015',
+            'BerkeleyX/BJC.2x/3T2015',
+            'BerkeleyX/BJC.3x/1T2016',
+            'BerkeleyX/BJC.4x/1T2016'
+        ];
+
+        var query = 'course=' + courseIDs.join('&course=');
+        var endpoint = '/course-enrollment-total?' + query
+        $.ajax({
+          url: API_URL + endpoint,
+          method: 'GET',
+          success: function (data, jqXHR, stuff) {
+            var enrollment1 = data[courseIDs[0]];
+            var enrollment2 = data[courseIDs[1]];
+            var enrollment3 = data[courseIDs[2]];
+            var enrollment4 = data[courseIDs[3]];
+
+            clock1 = $('.mooc1.enrollment').FlipClock(enrollment1, enrollParams);
+            clock2 = $('.mooc2.enrollment').FlipClock(enrollment2, enrollParams);
+            clock3 = $('.mooc3.enrollment').FlipClock(enrollment3, enrollParams);
+            clock4 = $('.mooc4.enrollment').FlipClock(enrollment4, enrollParams);
+          }
+        });
       });
     </script>
   </body>
