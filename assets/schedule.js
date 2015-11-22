@@ -212,7 +212,7 @@ cs10.week9 = {
     },
     readings: 'No Readings<br><br><strong>Midterm Review Session</strong><br>Sun 3/15 2-5pm<br>2050 VLSB<br><a href="http://tinyurl.com/midtermsp15" target="_blank">Slides</a> | (<a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=jasnowiss10&ProjectName=Midterm%20Review%20Solutions" target="_blank">Solutions</a>)',
     lectM: lect('Social Implications II', 'L14 - Social Implications II'),
-    labA: lab('Online <span class="snap">snap</span> Midterm'),
+    labA: lab('Online Snap<em>!</em> Midterm'),
     lectW: lect('The Internet', 'L15 - Internet I'),
     labB: lab('Project Work Session'),
     disc: disc('Midterm Debrief'),
@@ -340,7 +340,7 @@ cs10.week15 = {
     lectM: lect('Saving the World with Computing', '', '', 'Kathy Yelick'),
     labA: lab('Project Work Lab', '', true),
     lectW: lect('Summary and Farewell'),
-    labB: 'With-<span class="snap">snap</span> Exam',
+    labB: 'With-Snap<em>!</em> Exam',
     disc: disc('Summary and Farewell'),
     hw: hw('Final Project', '5/1', 'assignments/5919088', 'assign.html?//docs.google.com/document/d/1InDacW4tmqeFfxgDxsSv0ebY8LiBTj_3A03uhY7-vIw/pub')
 };
