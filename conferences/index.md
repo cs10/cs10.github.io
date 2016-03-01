@@ -4,8 +4,6 @@ title: CS10 Conferences Links
 ---
 
 # Conference Talks / Papers
-Please see the following links for notes presented at the following conferences.
-
 
 ### [SIGCSE 2016](sigcse-2016)
 * Poster: Autograding for Blocks Language
@@ -19,6 +17,7 @@ Please see the following links for notes presented at the following conferences.
 
 
 ---
+
 #### L@S 2014 Old Page
 
 This site is a collection of our resources from the _Best Practices for MOOC Video_ talk at [Learning @ Scale][las] 2014.
