@@ -3,6 +3,9 @@ title: SIGCSE 2016 Presentations
 layout: page
 ---
 
+## Links
+
+
 # Using Chat For Fun and Profit
 
 ### Abstract
@@ -50,4 +53,6 @@ layout: page
 ---
 
 # λ : Autograding For Snap<em>!</em>
-... TODO ...
+[View a PDF][poster]
+
+[poster]: lambda-poster.pdf
