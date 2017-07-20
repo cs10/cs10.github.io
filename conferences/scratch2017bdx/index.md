@@ -1,0 +1,81 @@
+---
+layout: default
+title: Scratch 2017 Presentations
+---
+
+# Scratch 2017 Bordeaux
+
+
+
+## Programming the Internet (of things) with Snap!
+<details>
+    <title>Summary</title>
+	The Internet is replete with wonderful APIs that can be called to query anything from jokes to weather forecasts to traffic data to accessing to your favorite websites, like Twitter and YouTube. Programming the web ...
+	Read more
+</details>
+
+<details>
+    <title>Speakers</title>
+	Dan Garcia, Bernat Romagosa, Jens Mönig, Michael Ball, Brian Harvey
+</details>
+
+## Writing Autograders for Snap! and Integrating them Into Your Course
+<details>
+    <title>Talk Summary</title>
+	The demo will present a system an autograder for Snap!, a visual programming language inspired by Scratch. Our autograder is a hosted solution that allows other courses to use our tools with little effort. At the ...
+	Read more
+</details>
+
+<details>
+    <title>Speakers</title>
+	Michael Ball, Dan Garcia, Lauren Mock
+</details>
+
+## The Beauty and Joy of Computing and the Snap! Programming Language
+<details>
+	<title>Summary</title>
+The Beauty and Joy of Computing (BJC) is a Snap!-based non-majors computer science curriculum aimed at bringing serious CS ideas such as recursion and higher order functions to a broad audience, with special emphasis ...
+</details>
+
+<details>
+	<title>Speakers</title>
+Dan Garcia, Brian Harvey, Jens Mönig, Michael Ball, Lauren Mock, Robert Low, Bernat Romagosa
+</details>
+
+## Early Analysis of "In-Lab" Autograding for Snap!
+
+<details>
+    <title>Poster</title>
+	This poster will primarily show two different user interactions with our autograder system, based on the two main users--students who get feedback and instructors who write tests. To demonstrate flexibility, we will demonstrate three different ...
+	Read more
+</details>
+
+
+<details>
+    <title>Speakers</title>
+	Michael Ball, Dan Garcia, Lauren Mock
+</details>
+
+## Lessons Learned Delivering a Customizable Course with Autograders to 200 Teachers
+<details>
+    <title>Talk Summary</title>
+	The Beauty and Joy of Computing (BJC) is an AP Computer Science Principles curriculum designed to attract a broad population of students, including females and underrepresented minorities, balancing programming and social implications. BJC was first ...
+</details>
+
+<details>
+    <title>Speakers</title>
+    Lauren Mock, Michael Ball, Dan Garcia, Brian Harvey
+</details>
+
+
+## The Beauty and Joy of Computing
+
+<details>
+    <title>Workshop</title>
+    The Beauty and Joy of Computing (BJC) is a Snap!-based Computer Science curriculum aimed at bringing serious CS ideas such as recursion and higher order functions to a broad audience, with special emphasis on inclusion of traditionally excluded groups including women and minorities. This workshop will allow participants explore the curriculum through gentle exercises, in a hands-on format. BJC is an Advanced Placement CS Principles national pilot in the US, which means it's a model for a high-school course that can earn college credit.
+</details>
+
+<details>
+    <title>Speakers</title>
+	Dan Garcia, Brian Harvey, Jens Mönig, Michael Ball, Bernat Romagosa, Robert Low, Lauren Mock
+</details>
