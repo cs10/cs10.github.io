@@ -4,6 +4,12 @@ title: CS10 Conferences Links
 ---
 
 # Conference Talks / Papers
+### [SIGCSE 2018](sigcse-2018/)
+* CS Principles Forum
+* Lightning Talk: IRT in 5 Minutes
+* Technology We Can't Live Without: Using Chat to run a large course.
+
+### SIGCSE 2017
 
 ### [Scratch 2017 Brodeaux](scratch2017bdx/)
 
