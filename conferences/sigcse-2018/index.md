@@ -4,7 +4,7 @@ layout: page
 ---
 
 # CS Principles Forum
-A pre-symposium CS Principles event. See more from BJC: [https://bjc.berkeley.edu/sigcse-csp-forum]().
+A pre-symposium CS Principles event. See more from BJC: [https://bjc.berkeley.edu/sigcse-csp-forum/2018](https://bjc.berkeley.edu/sigcse-csp-forum/2018).
 
 # Technology We Can't Live Without Panel
 
@@ -52,4 +52,4 @@ Awarded Best Lightning Talks Round 1 presentation!
 This was a quick overview of looking at exam scores to understand the effectiveness of questions.
 ## [IRT Slides][lightning-slides]
 
-[lightning-slides]: /http://bjc.link/sigcse-irt-lightning
+[lightning-slides]: http://bjc.link/sigcse-irt-lightning
