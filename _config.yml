@@ -7,7 +7,7 @@ description: > # CS10, The Beauty and Joy of Computing, is an introductory
     Joy of Computing is an AP Computer Science Principles class.
 keywords: "CS10, UC, Berkeley, CS, computer science, BJC, computing, education, Snap!, CS Principles, AP"
 baseurl: ""
-url: "http://cs10.org"
+url: "https://cs10.org"
 
 # Build settings
 markdown: kramdown
@@ -18,21 +18,8 @@ sass:
     style: :compressed
     sass_dir: assets/_sass
 
-# Custom Data
-bCourses: 1301472
-labsCourse: cs10_sp15.html
-piazzaURL: berkeley/spring2015/cs10spring2015
-# IS INST DOWN?
-# labsurl: http://beautyjoy.github.io/bjc-r/
-labsurl: http://inst.eecs.berkeley.edu/~cs10/labs
-# Should be in MomentJS format
-startDate: 2015-01-18 # First Sunday
-endDate:   2015-05-16 # Last Saturday
-questDate: 2015-02-18
-midtermDate: 2015-03-18
-finalDate: 2015-05-12
-gcalAPIKey: AIzaSyBcbN6F79dPHiGMvftIKZB86A6Ki2eIKZs
-
+plugins:
+  - jekyll-sitemap
 
 # TODO: TA Collections
 # collections:
