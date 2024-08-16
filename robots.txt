@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cs10.org/sitemap.xml
-Sitemap: https://cs10.org/sp24/sitemap.xml
-Sitemap: https://cs10.org/su24/sitemap.xml
+# Do not load the sitemap to see how siteimprove functions...
+# Sitemap: https://cs10.org/sitemap.xml
+# Sitemap: https://cs10.org/sp24/sitemap.xml
+# Sitemap: https://cs10.org/su24/sitemap.xml
